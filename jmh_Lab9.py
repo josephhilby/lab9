@@ -7,6 +7,7 @@ def encode(password):
     return encoded_password
 
 def decode(password):
+    # trying again
     decoded_password = ""
     for digit in password:
         n = int(digit) - 3
