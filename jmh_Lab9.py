@@ -6,8 +6,13 @@ def encode(password):
         encoded_password += str(n)
     return encoded_password
 
-def decode(encoded_password):
-    return "1234"
+def decode(password):
+    decoded_password = ""
+    for digit in password:
+        n = int(digit) - 3
+        n = n % 10
+        decoded_password += str(n)
+    return decoded_password
 
 
 def display_menu():
