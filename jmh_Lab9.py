@@ -2,9 +2,10 @@ def encode(password):
     encoded_password = ""
     for digit in password:
         n = int(digit) + 3
-        n = n%10
+        n = n % 10
         encoded_password += str(n)
     return encoded_password
+
 
 def decode(password):
     # trying again
@@ -42,8 +43,8 @@ def main():
                 else:
                     print("Your password was not stored!")
             case "2":
-                decoded_password = decode(current_password)
-                if decoded_password and current_password:
+                if current_password:
+                    decoded_password = decode(current_password)
                     print(f"The encoded password is {current_password}, and the original password is {decoded_password}")
                 else:
                     print("No password to decode!")
