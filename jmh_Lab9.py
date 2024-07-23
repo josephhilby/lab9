@@ -6,6 +6,9 @@ def encode(password):
         encoded_password += str(n)
     return encoded_password
 
+def decode(encoded_password):
+    return "1234"
+
 
 def display_menu():
     print("Menu")
@@ -32,6 +35,12 @@ def main():
                     print("Your password has been encoded and stored!")
                 else:
                     print("Your password was not stored!")
+            case "2":
+                decoded_password = decode(current_password)
+                if decoded_password and current_password:
+                    print(f"The encoded password is {current_password}, and the original password is {decoded_password}")
+                else:
+                    print("No password to decode!")
             case "3":
                 logged_in = False
         print("")
