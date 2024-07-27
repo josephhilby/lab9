@@ -45,7 +45,7 @@ def main():
             case "2":
                 if current_password:
                     decoded_password = decode(current_password)
-                    print(f"The encoded password is {current_password}, and the original password is {decoded_password}")
+                    print(f"The encoded password is {current_password}, and the original password is {decoded_password}.")
                 else:
                     print("No password to decode!")
             case "3":
